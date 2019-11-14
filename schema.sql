@@ -3,7 +3,6 @@ DROP TABLE IF EXISTS solar_ogilvie;
 DROP TABLE IF EXISTS solar_minneapolis;
 
 
-
 CREATE TABLE weather (
     weather_date_time TIMESTAMP,
     weather_description VARCHAR,
@@ -13,8 +12,8 @@ CREATE TABLE weather (
     humidity INT,
     wind_speed INT,
     wind_deg INT,
-    rain_1h INT,
-    snow_1h INT,
+    rain_1h FLOAT,
+    snow_1h FLOAT,
     weather_main VARCHAR,
     CONSTRAINT pk_weather PRIMARY KEY (
         weather_date_time
