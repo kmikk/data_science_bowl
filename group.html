@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+        <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle z-depth-1"
+        alt="Sample avatar"> -->
+    <head>                
+        <meta charset="UTF-8">
+        <title>Group Members</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        </head>
+
+<body style="background-color: #ebddcb;">
+
+        <style >
+                /* Columns side by side */
+                .column {
+                  float: left;
+                  width: 19.5%;
+                  margin-bottom: 16px;
+                  margin-top: 16px;
+                  padding: 0 8px;
+                }
+                
+                /* Display the columns below each other instead of side by side on small screens */
+                @media screen and (max-width: 650px) {
+                  .column {
+                    width: 100%;
+                    display: block;
+                  }
+                }
+                
+                /* Add some shadows to create a card effect */
+                .card {
+                  border: none;
+                  min-height: 350px;
+                  background-color: #ebddcb;
+                }
+                
+                /* Some left and right padding inside the container */
+                .container {
+                  padding: 0 16px;
+                }
+                
+                /* Clear floats */
+                .container::after, .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                
+                .title {
+                  color: grey;
+                }
+                
+                .button {
+                  border: none;
+                  outline: 0;
+                  display: inline-block;
+                  padding: 8px;
+                  color: white;
+                  background-color: #2d4b73;
+                  text-align: center;
+                  cursor: pointer;
+                  width: 100%;
+                }
+                
+                .button:hover {
+                  background-color: #555;
+                }
+                
+                </style>
+                
+    <!--NavBar--> 
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #d2b48c;">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="index.html"><strong>Final Project: Solar Data</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active dropdown justify-content-end">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Project Elements</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="ogilvie.html">Ogilvie Solar</a>
+                          <a class="dropdown-item" href="minneapolis.html">Minneapolis Solar</a>
+                          <a class="dropdown-item" href="machinelearning.html">Machine Learning</a>
+                          <a class="dropdown-item" href="visualization.html">Visualizations</a>
+                          <a class="dropdown-item" href="group.html">Group Members</a>
+                        </div>
+                      </li>    
+                </ul>
+            </div>
+        </nav>
+<br>
+                
+                <!-- Image Cards-->
+                <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="Images/Brian.jpg" class="rounded-circle" alt="Brian" style="width:100%">
+                            <div class="container">
+                              <h3 class="text-center">Brian Beck</h3>
+                              <p class="text-center">Professional Description</p>
+                              <p><button class="button" onclick= "window.open('https://www.linkedin.com/in/brian-beck-87226156/')"> LinkedIn Profile </button> </p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="column ">
+                          <div class="card">
+                            <img src="Images/Ashley.jpg" class="rounded-circle" alt="Ashley" style="width:100%">
+                            <div class="container" class="text-center">
+                              <h3 class="text-center">Ashley Karlsson</h3>
+                              <p class="text-center"> Professional Description</p>
+                              <p><button class="button" onclick= "window.open('https://www.linkedin.com/in/karlssonashley/')"> LinkedIn Profile </button> </p>
+                              </div>
+                          </div>
+                        </div>
+                
+                        <div class="column">
+                                <div class="card">
+                                  <img src="Images/Jack.jpg" class="rounded-circle" alt="Jack" style="width:100%">
+                                  <div class="container">
+                                    <h3 class="text-center">Jack Langree</h3>
+                                    <p class="text-center">Professional Description</p>
+                                    <p><button class = "button" onclick= "window.open('https://www.linkedin.com/in/jack-langree-7334598b/')"> LinkedIn Profile </button> </p>
+                                  </div>
+                                </div>
+                              </div>
+                        
+                        <div class="column">
+                            <div class="card">
+                                <img src="Images/Andy.jpg" class="rounded-circle" alt="Andy" style="width:100%">
+                                <div class="container">
+                                    <h3 class="text-center">Andy Lindberg</h3>
+                                    <p class="text-center">Professional Description</p>
+                                    <p><button class = "button secondary" onclick= "window.open('https://www.linkedin.com/in/andrew-george-lindberg/')"> LinkedIn Profile </button> </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="column">
+                          <div class="card">
+                            <img src="Images/Kate.jpg" class="rounded-circle" alt="Kate" style="width:100%">
+                            <div class="container">
+                              <h3 class="text-center">Kate Mikkelson</h3>
+                              <p class="text-center">Professional Description</p>
+                              <p><button class = "button" onclick= "window.open('https://www.linkedin.com/in/kate-mikkelson-13b5522/')"> LinkedIn Profile </button> </p>
+                            </div>
+                          </div>
+                        </div>      
+                      </div>
+    </body>
