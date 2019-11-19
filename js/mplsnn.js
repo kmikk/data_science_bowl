@@ -1,5 +1,6 @@
+
 Plotly.d3.csv("https://45.56.66.135/static/csv/mpls_nn.csv", function (row1) {
-    Plotly.d3.csv("https://45.56.66.135/static/csv/csv/mpls_xg.csv", function (row2) {
+    // Plotly.d3.csv("https://45.56.66.135/static/csv/csv/mpls_xg.csv", function (row2) {
         // Plotly.d3.csv("https://45.56.66.135/static/csv/csv/olg_nn.csv", function (row3) {
         //     Plotly.d3.csv("https://45.56.66.135/static/csv/csv/olg_xg.csv", function (row4) {
                 // Plotly.d3.csv("CMH01_2017-2018_TrollData.csv", function (row5) {
@@ -8,9 +9,9 @@ Plotly.d3.csv("https://45.56.66.135/static/csv/mpls_nn.csv", function (row1) {
                         function unpack(row1, key) {
                             return row1.map(function (row) { return row[key]; });
                         }
-                        function unpack(row2, key) {
-                            return row2.map(function (row) { return row[key]; });
-                        }
+                        // function unpack(row2, key) {
+                        //     return row2.map(function (row) { return row[key]; });
+                        // }
                         // function unpack(row3, key) {
                         //     return row3.map(function (row) { return row[key]; });
                         // }
@@ -32,14 +33,14 @@ Plotly.d3.csv("https://45.56.66.135/static/csv/mpls_nn.csv", function (row1) {
                             y: unpack(row1, 'predictions_in_Watts'),
                             line: { color: '00b8ff' }
                         };
-                        var trace2 = {
-                            type: "scatter",
-                            mode: "lines",
-                            name: 'MPLS XGBOOST',
-                            x: unpack(row2, 'date_time'),
-                            y: unpack(row2, 'predictions_in_Watts'),
-                            line: { color: '1034a6' }
-                        };
+                        // var trace2 = {
+                        //     type: "scatter",
+                        //     mode: "lines",
+                        //     name: 'MPLS XGBOOST',
+                        //     x: unpack(row2, 'date_time'),
+                        //     y: unpack(row2, 'predictions_in_Watts'),
+                        //     line: { color: '1034a6' }
+                        // };
                         // var trace3 = {
                         //     type: "scatter",
                         //     mode: "lines",
@@ -74,7 +75,8 @@ Plotly.d3.csv("https://45.56.66.135/static/csv/mpls_nn.csv", function (row1) {
                         // };
 
                         // var data = [trace1, trace2, trace3, trace4, trace5, trace6];
-                        var data = [trace1, trace2];
+                        // var data = [trace1, trace2];
+                        var data = [trace1];
                         var layout = {
                             title: 'Predicted Watts',
                             yaxis: {
@@ -88,5 +90,5 @@ Plotly.d3.csv("https://45.56.66.135/static/csv/mpls_nn.csv", function (row1) {
     //             })
         //     })
         // })
-    })
+    // })
 })
