@@ -1,1 +1,2 @@
-# data_science_bowl
+# solar machine learning
+
