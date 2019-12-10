@@ -1,6 +1,6 @@
 
-Plotly.d3.csv("https://alvern.s3.us-east-2.amazonaws.com/ml_project/mpls_nn.csv", function (row1) {
-    Plotly.d3.csv("https://alvern.s3.us-east-2.amazonaws.com/ml_project/mpls_xg.csv", function (row2) {
+Plotly.d3.csv("../resources/mpls_nn.csv", function (row1) {
+    Plotly.d3.csv("../resources/mpls_xg.csv", function (row2) {
         // Plotly.d3.csv("https://45.56.66.135/static/csv/csv/olg_nn.csv", function (row3) {
         //     Plotly.d3.csv("https://45.56.66.135/static/csv/csv/olg_xg.csv", function (row4) {
                 // Plotly.d3.csv("CMH01_2017-2018_TrollData.csv", function (row5) {
